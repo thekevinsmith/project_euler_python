@@ -1,3 +1,8 @@
+# Problem statement:
+# Print the numbers 1 to 100.
+# For every multiple divisible by 3, print fizz
+# For every multiple divisible by 5, print buzz
+# For multiples divisible by both, print fizzbuzz
 
 for i in range(1, 100):
     word = []
