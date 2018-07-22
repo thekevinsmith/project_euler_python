@@ -4,3 +4,11 @@
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
 # TODO: ALL
+
+
+def main():
+    print()
+
+
+if __name__ == '__main__':
+    main()

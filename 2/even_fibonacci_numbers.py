@@ -6,16 +6,23 @@
 # values do not exceed four million,
 # find the sum of the even-valued terms.
 
-sum = 0
-series = [1, 2, 3]   # append each new variable
-i = 2
-while series[i] <= 4000000:
-    series.append(series[i] + series[i-1])
-    i = i + 1
 
-for j in range(len(series)):
-    if series[j] % 2 == 0:
-        sum = series[j] + sum
-    else:
-        pass
-print(sum)
+def main():
+
+    sum = 0
+    series = [1, 2, 3]   # append each new variable
+    i = 2
+    while series[i] <= 4000000:
+        series.append(series[i] + series[i-1])
+        i = i + 1
+
+    for j in range(len(series)):
+        if series[j] % 2 == 0:
+            sum = series[j] + sum
+        else:
+            pass
+    print(sum)
+
+
+if __name__ == '__main__':
+    main()

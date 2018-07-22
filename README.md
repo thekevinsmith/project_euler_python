@@ -7,7 +7,7 @@ This is the python folder.
 #Problems Completed: (Folders according to number)
 1. 3 and 5 Multiples and 3 and 5 Multiples FizzBuzz         (done)
 2. Even Fibonacci Numbers                                   (done)
-3. Largest Prime Factor                                     (working)
+3. Largest Prime Factor                                     (done)
 4. Largest Palindrome product                               (working)
 5. Smallest Multiple                                        (working)
 
