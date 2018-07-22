@@ -25,7 +25,7 @@ def main(k, N):
 
 if __name__ == '__main__':
     sys.setrecursionlimit(10000)
-    sys.getrecursionlimit()
+    # sys.getrecursionlimit()
     # print(sys.getrecursionlimit())
 
     primenumbers = []
