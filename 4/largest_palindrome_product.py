@@ -37,15 +37,7 @@ def main():
                             if result > largest:
                                 largest = result
 
-    print(largest)
-
-
-
-
-
-
-
-
+    print("Largest palindromic: %d" % largest)
 
 if __name__ == '__main__':
     palindromeNum = []
@@ -53,10 +45,10 @@ if __name__ == '__main__':
     sixNum = []
     main()
 
+# Dynamic attempt: Technically its possible but very difficult as we need to
+# consider set points if a for or while is used to do verification
+# Think on this...
 
-
-
-    # 994009
 
     # largest = 0
     # count = 6
@@ -66,11 +58,4 @@ if __name__ == '__main__':
     #         if result > largest:
     #             largest = result
     # print(result)
-    #
-    # print(994009// 10**(6-1-0) % 10)# MS
-    # print(994009 // 10 ** (0) % 10) # LS
-    #
-    # print(994009 // 10 ** (6 - 1 - 1) % 10)
-    # print(994009 // 10 ** (1) % 10)
-
 
