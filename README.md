@@ -10,4 +10,5 @@ This is the python folder.
 3. Largest Prime Factor                                     (done)
 4. Largest Palindrome product                               (done)
 5. Smallest Multiple                                        (working)
-
+6. Sum Square Difference                                    (working)
+7. 10001st Prime number                                     (working)
