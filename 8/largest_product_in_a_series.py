@@ -55,7 +55,6 @@ def main():
     start = 0
     limit = len(data) + 1
     interval = 1
-    result = 0
     largest = 0
 
     for i in range(0, limit - 1):
@@ -64,11 +63,13 @@ def main():
         else:
             continue
 
-   # print(limit) -> 1020
     limit = len(cdata)
+    adjdigits = 13
 
-    for i in range(start, limit - 4, interval):
-        result = cdata[(i + 1)] * cdata[(i + 2)] * cdata[(i + 3)] * cdata[(i + 4)]
+    for i in range(start, (limit - adjdigits -1), interval):
+        result = 1
+        for n in range(0, adjdigits):
+            result *= cdata[i + n]
         if result > largest:
             largest = result
     print(largest)
@@ -76,3 +77,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    #Answer = 23514624000
