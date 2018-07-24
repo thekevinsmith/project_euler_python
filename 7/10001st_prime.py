@@ -7,7 +7,7 @@
 
 def main():
     start = 2
-    limit = 10000000
+    limit = 200000
     interval = 1
     prime = [1]
     wanted = 10001
