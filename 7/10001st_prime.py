@@ -3,14 +3,24 @@
 # we can see that the 6th prime is 13.
 # What is the 10 001st prime number?
 
-# TODO: Idea
-# for 1 to a very large number
-# while -> do the prime number finder
-# append all prime numbers to an array
-# until len(array) == 10001, len(array) -> 0 = prime number 0 which is 1
+# Found 10001st: 104729
 
 def main():
-    print()
+    start = 2
+    limit = 10000000
+    interval = 1
+    prime = [1]
+    wanted = 10001
+
+    for i in range(start, limit + 1, interval):
+        for n in range(start, i, interval):
+            if i % n == 0:
+                break
+        else:
+            prime.append(i)
+            if len(prime) == wanted:
+                print("Found 10001st: %d" % prime[wanted - 1])
+    print("Array: %ls" % prime)
 
 
 if __name__ == '__main__':
