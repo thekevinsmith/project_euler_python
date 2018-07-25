@@ -13,9 +13,9 @@ This is the python folder.
 6. Sum Square Difference                                    (done)
 7. 10001st Prime number                                     (done)
 8. Statement Largest product in a series                    (done)
-9. Special Pythagorean triplet                              (working) <- Current
-10. Summation of primes                                     (working)
-11. Largest product in a grid                               (working)
+9. Special Pythagorean triplet                              (done) 
+10. Summation of primes                                     (done) 
+11. Largest product in a grid                               (working) <- Current
 12. Highly divisible triangular number                      (working)
 13. Statement: Large sum                                    (working)
 14. Longest Collatz sequence                                (working)
