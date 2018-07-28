@@ -56,8 +56,13 @@ def griddata():
 
 def main():
     data = griddata()
-    for i in range(1,len(data)):
-            print(data[i])
+    dataArray = []
+    data = (data.replace('\n', ' ')).split(' ')
+
+    count = 0
+    for i in data:
+        count = count + 1
+    print(count)
 
 
 
