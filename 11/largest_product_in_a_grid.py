@@ -64,6 +64,15 @@ def main():
         count = count + 1
     print(count)
 
+    # now have the numbers in an useable array format. now we need to set up the contitions of the multiplication
+
+    # up
+    # down
+    # left
+    # right
+    # diagonally
+    # wouldnt it make sense to have L->R down diagonal, L->R up diagonal, R->L down diagonal and R->L up diagonal???
+
 
 
 
