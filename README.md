@@ -15,8 +15,8 @@ This is the python folder.
 8. Statement Largest product in a series                    (done)
 9. Special Pythagorean triplet                              (done) 
 10. Summation of primes                                     (done) 
-11. Largest product in a grid                               (working) <- Current
-12. Highly divisible triangular number                      (working)
+11. Largest product in a grid                               (done) 
+12. Highly divisible triangular number                      (working) <- Current
 13. Statement: Large sum                                    (working)
 14. Longest Collatz sequence                                (working)
 15. Lattice paths                                           (working)

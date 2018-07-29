@@ -56,24 +56,70 @@ def griddata():
 
 def main():
     data = griddata()
-    dataArray = []
-    data = (data.replace('\n', ' ')).split(' ')
 
-    count = 0
-    for i in data:
-        count = count + 1
-    print(count)
+    rows = data.split('\n')
+    matrix = [row.split(' ') for row in rows]
 
-    # now have the numbers in an useable array format. now we need to set up the contitions of the multiplication
-
-    # up
-    # down
-    # left
-    # right
-    # diagonally
-    # wouldnt it make sense to have L->R down diagonal, L->R up diagonal, R->L down diagonal and R->L up diagonal???
-
-
+    # matrix[height][width]
+    number = 0
+    answer = 0
+    for iy in range(0, len(matrix)):
+        for ix in range(0, len(matrix[iy])):
+            # up
+            try:
+                answer = int(matrix[iy + 0][ix]) * int(matrix[iy + 1][ix]) * int(matrix[iy + 2][ix]) * int(matrix[iy + 3][ix])
+            except IndexError:
+                pass
+            finally:
+                if answer > number:
+                    number = answer
+                    #print(number)
+            # down
+            try:
+                answer = int(matrix[iy - 0][ix]) * int(matrix[iy - 1][ix]) * int(matrix[iy - 2][ix]) * int(matrix[iy - 3][ix])
+            except IndexError:
+                pass
+            finally:
+                if answer > number:
+                    number = answer
+                    #print(number)
+            # left
+            try:
+                answer = int(matrix[iy][ix - 0]) * int(matrix[iy][ix - 1]) * int(matrix[iy][ix - 2]) * int(matrix[iy][ix - 3])
+            except IndexError:
+                pass
+            finally:
+                if answer > number:
+                    number = answer
+                    #print(number)
+            # right
+            try:
+                answer = int(matrix[iy][ix + 0]) * int(matrix[iy][ix + 1]) * int(matrix[iy][ix + 2]) * int( matrix[iy][ix + 3])
+            except IndexError:
+                pass
+            finally:
+                if answer > number:
+                    number = answer
+                    #print(number)
+            # diagonally (normal)
+            try:
+                answer = int(matrix[iy + 0][ix + 0]) * int(matrix[iy + 1][ix + 1]) * int(matrix[iy + 2][ix + 2]) * int(matrix[iy + 3][ix + 3])
+            except IndexError:
+                pass
+            finally:
+                if answer > number:
+                    number = answer
+                    #print(number)
+            # diagonally (reversed)
+            try:
+                answer = int(matrix[iy + 0][ix - 0]) * int(matrix[iy + 1][ix - 1]) * int(matrix[iy + 2][ix - 2]) * int(matrix[iy + 3][ix - 3])
+            except IndexError:
+                pass
+            finally:
+                if answer > number:
+                    number = answer
+                    #print(number)
+    print(number)
 
 
 if __name__ == '__main__':
