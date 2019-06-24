@@ -18,7 +18,7 @@ This is the python folder.
 11. Largest product in a grid                               (done) 
 12. Highly divisible triangular number                      (done)
 13. Statement: Large sum                                    (done)
-14. Longest Collatz sequence                                (working)
+14. Longest Collatz sequence                                (done)
 15. Lattice paths                                           (working)
 16.                                   
 17.                               
