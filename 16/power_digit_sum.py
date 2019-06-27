@@ -7,6 +7,8 @@
 
 def main():
     print()
+    #2^15 should be very easy in python
+
 
 if __name__ == '__main__':
     main()
