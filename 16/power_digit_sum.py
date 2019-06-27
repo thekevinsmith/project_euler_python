@@ -7,8 +7,14 @@
 
 def main():
     print()
-    #2^15 should be very easy in python
-    # two
+
+    res = str(2**1000)
+    final = 0
+
+    for d in range(len(res)):
+        final += int(res[d])
+
+    print(final)  # answer: 1366
 
 
 if __name__ == '__main__':
