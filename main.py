@@ -1,0 +1,9 @@
+# The main file used to template everything.
+
+
+def main():
+    print()
+
+
+if __name__ == '__main__':
+    main()
