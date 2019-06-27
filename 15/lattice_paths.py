@@ -3,43 +3,89 @@
 #  there are exactly 6 routes to the bottom right corner.
 # How many such routes are there through a 20×20 grid?
 # See the web page
-
 # this is a more difficult algorithmic problem. 6 ways to go down and right.
 
 
-def num_ways(n):
-    print()
-    # 0x0 = 1 steps = 1 way
-    # 1X1 = 2 steps = 2 ways
-    # 2x2 = 4 steps = 6 ways
-    # 3x3 = 6 steps
+# 1   1   1   1
+# 1   2   3   4
+# 1   3   6   10
+# 1   4   10  20
+
+# a = [[1, 2, 3], [4, 5, 6]]
+# print(a[0])
+# print(a[1])
+#
+# b = a[0]
+# print(b)
+# print(a[0][2])
+# a[0][1] = 7
+# print(a)
+# print(b)
+# b[2] = 9
+# print(a[0])
+# print(b)
 
 def main():
-    print()
 
-    # for the 2x2 grid
-    N = 6 #'number of paths'
-    x1 = ['r', 'd', 'r', 'd']   # 1
-    x2 = ['d', 'd', 'r', 'r']   # 2
-    x3 = ['r', 'r', 'd', 'd']   # 3
-    x4 = ['d', 'r', 'd', 'r']   # 4
-    x5 = ['r', 'd', 'd', 'r']   # 5
-    x6 = ['d', 'r', 'r', 'd']   # 6
+    gs = 2
+    grid = []
 
-    x1 = ['r', 'r', 'r', 'r', 'r', 'r']
-    x2 = ['d', 'd', 'd', 'd', 'd', 'd']
-    x2 = ['d', 'd', 'd', 'd', 'd', 'd']
+    # this sets up the basics
+    for x in range(0, gs+1):
+        row = []
+        for y in range(0, gs+1):
+            if y == 0 or x == 0:
+                row.append(1)
+            else:
+                row.append(0)
+        grid.append(row)
 
-    # for all intensive purposes we could suggest 1 and zero.
-    # there is always an equal amount of steps to take.
+    print(grid)
 
-    #2x2 = 4 X 100 = 400 steps for the 20x20
+    # again for the heavy stuff
+    for x in range(0, gs+1):
+        row = []
+        for y in range(0, gs+1):
+            if y == 0 or x == 0:
+                row.append(1)
+            else:
+                row.append(0)
+        grid.append(row)
 
-    # need a total amount of steps, they cant be similar to any other set of steps.
+    # for
+    print(grid)
 
-   # --  num_ways('20x20') = 10*num_ways('2x2')
+    # array has been initialized.
 
 
+
+
+
+
+    # grid = []
+    # print(grid)
+
+
+    # n = 2
+    # grid = []
+    # for i in range(0, n+1):
+    #     for j in range(0, n+1):
+    #         paths = grid[i+1, j] + grid[i, j+1]
+
+
+    # w*h
+    # 0x1 grid => paths available = 1
+    # 1x1 grid => paths available = 2
+    # 2x1 grid => paths available = 3
+    # 2x2 grid => paths available = 6
+    # 3x1 grid => paths available = 4
+
+    # size = 2 # 2x2
+    # grid = [size+1, size+1]
+    # print(grid)
+
+    # grid[2, 2] = grid[1, 1] + grid[1, 1]
+    # print(grid)
 
 
 
