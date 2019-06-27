@@ -8,6 +8,7 @@
 
 
 def num_ways(n):
+    print()
     # 0x0 = 1 steps = 1 way
     # 1X1 = 2 steps = 2 ways
     # 2x2 = 4 steps = 6 ways
@@ -36,7 +37,7 @@ def main():
 
     # need a total amount of steps, they cant be similar to any other set of steps.
 
-   --  num_ways('20x20') = 10*num_ways('2x2')
+   # --  num_ways('20x20') = 10*num_ways('2x2')
 
 
 
